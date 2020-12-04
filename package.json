@@ -1,0 +1,16 @@
+{
+  "name": "admin",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:cuehuabuleng/personal-website.git",
+  "author": "cuehuabuleng <1079713849@qq.com>",
+  "license": "MIT",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vuepress dev blog",
+    "build": "vuepress build blog"
+  },
+  "devDependencies": {
+    "vuepress": "^1.7.1"
+  }
+}
