@@ -1,7 +1,7 @@
 module.exports = {
   title: '东方根号三的博客',
   description: 'Just playing around',
-  dest:'public',
+  dest: 'public',
   head: [
     ['link', { rel: 'icon', href: '/images/01.ico' }]
   ],
@@ -110,5 +110,78 @@ module.exports = {
   cyberSecurityRecord: '广东海洋大学',
   cyberSecurityLink: 'https://www.gdou.edu.cn/',
   // 项目开始时间，只填写年份
-  startYear: '2020-11-11'
+  startYear: '2020-11-11',
+
+  // 添加一些插件
+  // 看板娘
+  plugins: [
+    [
+      "@vuepress-reco/vuepress-plugin-kan-ban-niang",
+      {
+        theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
+        clean: false,
+        modelStyle: {
+          position: "fixed",
+          left: "15px",
+          bottom: "5px",
+          opacity: "0.9",
+          zIndex: 99999
+        },
+        btnStyle: {
+          left: "0px",
+          bottom: "10px",
+          opacity: "0.9",
+          zIndex: 99999
+        },
+        messageStyle: {
+          left: "0px",
+          bottom: "190px",
+          opacity: "0.9",
+          zIndex: 99999
+        }
+      }
+    ],
+    [
+      '@vuepress-reco/vuepress-plugin-pagation',
+      {
+        total: 2,
+        perPage: 10,
+        currentPage: 1,
+        getCurrentPage: 1
+      }
+    ],
+    [
+      '@vuepress-reco/vuepress-plugin-bgm-player',
+      {
+        audios: [
+          // 本地文件示例
+          {
+            name: '장가갈 수 있을까',
+            artist: '咖啡少年',
+            url: '/bgm/1.mp3',
+            cover: '/bgm/1.jpg'
+          },
+          // 网络文件示例
+          {
+            name: '강남역 4번 출구',
+            artist: 'Plastic / Fallin` Dild',
+            url: 'https://assets.smallsunnyfox.com/music/2.mp3',
+            cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
+          },
+          {
+            name: '用胳膊当枕头',
+            artist: '최낙타',
+            url: 'https://assets.smallsunnyfox.com/music/3.mp3',
+            cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+          }
+        ],
+        position: {
+          right: '10px',
+          bottom: '10px',
+          'z-index': '999999'
+        },
+        autoShrink: true
+      }
+    ]
+  ]
 }  

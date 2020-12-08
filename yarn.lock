@@ -1183,6 +1183,11 @@
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-back-to-top/-/vuepress-plugin-back-to-top-1.5.7.tgz#ae65e3ba484d0873ad58591e939fe58a4e46e7de"
   integrity sha512-wQwPch7chcbIUsIKJNQxirdmvV3RQE8pVGb1WWxJa2GA4EtrXLiwYTBZTjx6PpWU2pUH+5mYT+aRL92liyfWRQ==
 
+"@vuepress-reco/vuepress-plugin-bgm-player@^1.1.3":
+  version "1.1.3"
+  resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-bgm-player/-/vuepress-plugin-bgm-player-1.1.3.tgz#47e1142908dfc7341c6507a8f1b71f14a357ab3e"
+  integrity sha512-rZDIOyS9GWaE1lJVXcRAZXENfuHYlkFT5IR7yNS9vWxmVj7BPet2jZXeRQqVcTiDOstQakb8v4uTkE7fELbwVg==
+
 "@vuepress-reco/vuepress-plugin-comments@^1.5.7":
   version "1.5.7"
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-comments/-/vuepress-plugin-comments-1.5.7.tgz#c1d9709c9d80bed79d860b2962b0be7d17a62d39"
@@ -1195,6 +1200,11 @@
     "@vssue/api-gitlab-v4" "^1.1.1"
     valine "^1.4.14"
     vssue "^1.4.6"
+
+"@vuepress-reco/vuepress-plugin-kan-ban-niang@^1.0.5":
+  version "1.0.5"
+  resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-kan-ban-niang/-/vuepress-plugin-kan-ban-niang-1.0.5.tgz#73b47094f1a07af05923fe9ae6c25a4c33586168"
+  integrity sha512-ufqpOw0zhLxv3PvoYlHTsjmG4CFiCaQ8dnf950Ov7JmajKgpAMarZ3ObB+xi5ex0sgetxU82YSf+CptQceXQIw==
 
 "@vuepress-reco/vuepress-plugin-loading-page@^1.5.7":
   version "1.5.7"
