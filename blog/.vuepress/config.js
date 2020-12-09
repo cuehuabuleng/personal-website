@@ -12,14 +12,33 @@ module.exports = {
     mode: 'auto', // 默认 auto，auto 跟随系统，dark 暗色模式，light 亮色模式
     modePicker: true,// 默认 true，false 不显示模式调节按钮，true 则显示
     // 配置首页右侧信息栏的头像
-    authorAvatar: '/images/avatar.gif',
+    authorAvatar: '/images/avatar.jpg',
     // 全局作者姓名
     author: '东方根号三',
     // 添加导航栏
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
-      { text: '个人网站', link: 'http://114.55.93.74:8009/#/home' },
+      { text: 'project', 
+      icon:'reco-coding',
+      items:[
+        {
+          text:'个人博客网站',
+          link:'http://114.55.93.74:8009/#/home',
+          icon:'reco-blog'
+        },
+        {
+          text:'前端面试复习',
+          link:'http://114.55.93.74:8013/',
+          icon:'reco-api'
+        },
+        {
+          text:'react通用后台管理系统',
+          link:'http://114.55.93.74:8005/#/home'
+        }
+
+      ]
+     },
       { text: 'github', link: 'https://github.com/cuehuabuleng', icon: 'reco-github' }
       // {
       //     text: 'Languages',
@@ -142,37 +161,20 @@ module.exports = {
       }
     ],
     [
-      '@vuepress-reco/vuepress-plugin-pagation',
-      {
-        total: 2,
-        perPage: 10,
-        currentPage: 1,
-        getCurrentPage: 1
-      }
+      '@vuepress-reco/vuepress-plugin-pagation'
     ],
+
+    // 背景音乐插件
     [
       '@vuepress-reco/vuepress-plugin-bgm-player',
       {
         audios: [
-          // 本地文件示例
-          {
-            name: '장가갈 수 있을까',
-            artist: '咖啡少年',
-            url: '/bgm/1.mp3',
-            cover: '/bgm/1.jpg'
-          },
           // 网络文件示例
           {
-            name: '강남역 4번 출구',
-            artist: 'Plastic / Fallin` Dild',
-            url: 'https://assets.smallsunnyfox.com/music/2.mp3',
-            cover: 'https://assets.smallsunnyfox.com/music/2.jpg'
-          },
-          {
-            name: '用胳膊当枕头',
-            artist: '최낙타',
-            url: 'https://assets.smallsunnyfox.com/music/3.mp3',
-            cover: 'https://assets.smallsunnyfox.com/music/3.jpg'
+            name: '耗尽',
+            artist: '薛之谦、郭聪明',
+            url: '/bgm/bgm.mp3',
+            cover: '/bgm/bgm.jpg'
           }
         ],
         position: {
@@ -180,7 +182,49 @@ module.exports = {
           bottom: '10px',
           'z-index': '999999'
         },
-        autoShrink: true
+        autoShrink: true,
+        shrinkMode: 'mini',
+        floatPosition: 'right',
+        floatStyle: {
+          bottom: '200px',
+          'z-index': '999999'
+        }
+      }
+    ],
+    // 背景丝带插件
+    [
+      "ribbon",
+      {
+        size: 90,     // width of the ribbon, default: 90
+        opacity: 0.8, // opacity of the ribbon, default: 0.3
+        zIndex: -1    // z-index property of the background, default: -1
+      }
+    ],
+
+    // 打赏插件
+    [
+      '@vuepress-reco/vuepress-plugin-bulletin-popover',
+      {
+        width: '260px', // 默认 260px
+        title: '消息提示',
+        body: [
+          {
+            type: 'title',
+            content: '关注公众号',
+            style: 'text-aligin: center;'
+          },
+          {
+            type: 'image',
+            src: '/images/gongzhonghao.jpg'
+          }
+        ],
+        footer: [
+          {
+            type: 'button',
+            text: '打赏',
+            link: '/blogs/view/other.html'
+          }
+        ]
       }
     ]
   ]

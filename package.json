@@ -11,7 +11,9 @@
     "build": "vuepress build blog"
   },
   "devDependencies": {
-    "vuepress": "^1.7.1"
+    "@vuepress-reco/vuepress-plugin-bulletin-popover": "^1.5.7",
+    "vuepress": "^1.7.1",
+    "vuepress-plugin-ribbon": "^1.0.2"
   },
   "dependencies": {
     "@vuepress-reco/vuepress-plugin-bgm-player": "^1.1.3",

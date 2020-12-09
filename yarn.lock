@@ -1188,6 +1188,11 @@
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-bgm-player/-/vuepress-plugin-bgm-player-1.1.3.tgz#47e1142908dfc7341c6507a8f1b71f14a357ab3e"
   integrity sha512-rZDIOyS9GWaE1lJVXcRAZXENfuHYlkFT5IR7yNS9vWxmVj7BPet2jZXeRQqVcTiDOstQakb8v4uTkE7fELbwVg==
 
+"@vuepress-reco/vuepress-plugin-bulletin-popover@^1.5.7":
+  version "1.5.7"
+  resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-bulletin-popover/-/vuepress-plugin-bulletin-popover-1.5.7.tgz#f1f5fac56dd4ec8e2adcae33f18a1e00d6122d9b"
+  integrity sha512-6+oYzaE0PbA/H4KU0/yhm6V0yEBPSUXPhOf3Nh+I5Uen0DBjkF4NOH3dQBoijcdNACvVnr/JCo9gO8xhG0kSDg==
+
 "@vuepress-reco/vuepress-plugin-comments@^1.5.7":
   version "1.5.7"
   resolved "https://registry.yarnpkg.com/@vuepress-reco/vuepress-plugin-comments/-/vuepress-plugin-comments-1.5.7.tgz#c1d9709c9d80bed79d860b2962b0be7d17a62d39"
@@ -8347,6 +8352,11 @@ vuepress-plugin-mailchimp@^1.4.1:
   dependencies:
     jsonp "^0.2.1"
     query-string "^6.9.0"
+
+vuepress-plugin-ribbon@^1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/vuepress-plugin-ribbon/-/vuepress-plugin-ribbon-1.0.2.tgz#2845674049939e1b2a4d285abc685abb8b5490ed"
+  integrity sha512-r9X3994eNsQtf/t7ArfuJsl8SUtuJtEMuIKfRWoUV2XLg7N43ypUnKwCSXkLXSVeBBnM4v9X7QwJJLqbFlMQ9A==
 
 vuepress-plugin-sitemap@^2.3.1:
   version "2.3.1"
