@@ -24,3 +24,8 @@ features:
 - title: Tomorrow
   details: 希望更多的爱好者能够参与进来，帮助这个主题更好的成长
 ---
+
+<span id="http://localhost:8080/" class="leancloud_visitors" data-flag-title="首页">
+    <em class="post-meta-item-text">访问量 </em>
+    <i class="leancloud-visitors-count">1000000</i>
+</span>

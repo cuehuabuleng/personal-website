@@ -5,6 +5,8 @@
 > 
 > 如果你觉得本站的内容还不错，可以为作者贡献一杯奶茶。
 
-|微信|支付宝|
-|:-:|:-:|
-|<img src='/images/wechatPay.png' style='width:160px'/>|<img src='/images/AliPay.png' style='width:160px'/>|
+|                          微信                          |                       支付宝                        |
+| :----------------------------------------------------: | :-------------------------------------------------: |
+| <img src='/images/wechatPay.png' style='width:160px'/> | <img src='/images/AliPay.png' style='width:160px'/> |
+
+

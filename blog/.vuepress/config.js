@@ -1,9 +1,10 @@
 module.exports = {
   title: '东方根号三的博客',
-  description: 'Just playing around',
+  description: '愿时光能缓，愿故人不散！',
   dest: 'public',
   head: [
-    ['link', { rel: 'icon', href: '/images/01.ico' }]
+    ['link', { rel: 'icon', href: '/01.ico' }]
+    ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
   themeConfig: {
@@ -19,26 +20,35 @@ module.exports = {
     nav: [
       { text: '首页', link: '/', icon: 'reco-home' },
       { text: '时间轴', link: '/timeline/', icon: 'reco-date' },
-      { text: 'project', 
-      icon:'reco-coding',
-      items:[
-        {
-          text:'个人博客网站',
-          link:'http://114.55.93.74:8009/#/home',
-          icon:'reco-blog'
-        },
-        {
-          text:'前端面试复习',
-          link:'http://114.55.93.74:8013/',
-          icon:'reco-api'
-        },
-        {
-          text:'react通用后台管理系统',
-          link:'http://114.55.93.74:8005/#/home'
-        }
+      {
+        text: 'project',
+        icon: 'reco-coding',
+        items: [
+          {
+            text: '个人博客网站',
+            link: 'http://114.55.93.74:8009/#/home',
+            icon: 'reco-blog'
+          },
+          {
+            text: '前端面试复习',
+            link: 'http://114.55.93.74:8013/',
+            icon: 'reco-api'
+          },
+          {
+            text: 'react通用后台管理系统',
+            link: 'http://114.55.93.74:8005/#/home'
+          },
+          {
+            text: '校车平台管理系统',
+            link: 'http://114.55.93.74:8008/#/school-bus'
+          },
+          {
+            text: '小demo',
+            link: '/blogs/view/demo.html'
+          }
 
-      ]
-     },
+        ]
+      },
       { text: 'github', link: 'https://github.com/cuehuabuleng', icon: 'reco-github' }
       // {
       //     text: 'Languages',
@@ -50,21 +60,15 @@ module.exports = {
       // }
     ],
     // 添加友情链接
-    friendLink: [
-      {
-        title: 'vuepress-theme-reco',
-        desc: 'A simple and beautiful vuepress Blog & Doc theme.',
-        logo: "https://vuepress-theme-reco.recoluan.com/icon_vuepress_reco.png",
-        link: 'https://vuepress-theme-reco.recoluan.com'
-      },
-      {
-        title: '午后南杂',
-        desc: 'Enjoy when you can, and endure when you must.',
-        email: 'recoluan@qq.com',
-        link: 'https://www.recoluan.com'
-      },
-      // ...
-    ],
+    // friendLink: [
+    //   {
+    //     title: '午后南杂',
+    //     desc: 'Enjoy when you can, and endure when you must.',
+    //     email: 'recoluan@qq.com',
+    //     link: 'https://www.recoluan.com'
+    //   },
+    //   // ...
+    // ],
     // 博客配置
     blogConfig: {
       category: {
@@ -129,7 +133,7 @@ module.exports = {
   cyberSecurityRecord: '广东海洋大学',
   cyberSecurityLink: 'https://www.gdou.edu.cn/',
   // 项目开始时间，只填写年份
-  startYear: '2020-11-11',
+  startYear: '2019',
 
   // 添加一些插件
   // 看板娘
@@ -139,6 +143,7 @@ module.exports = {
       {
         theme: ['blackCat', 'whiteCat', 'haru1', 'haru2', 'haruto', 'koharu', 'izumi', 'shizuku', 'wanko', 'miku', 'z16'],
         clean: false,
+        height: 300,
         modelStyle: {
           position: "fixed",
           left: "15px",
@@ -154,7 +159,7 @@ module.exports = {
         },
         messageStyle: {
           left: "0px",
-          bottom: "190px",
+          bottom: "250px",
           opacity: "0.9",
           zIndex: 99999
         }
@@ -225,6 +230,56 @@ module.exports = {
             link: '/blogs/view/other.html'
           }
         ]
+      }
+    ],
+
+    [
+      //鼠标点击特效插件
+      "cursor-effects",
+      {
+        size: 3,                    // size of the particle, default: 2
+        shape: ['circle'],  // shape of the particle, default: 'star'
+        zIndex: 999999999           // z-index property of the canvas, default: 999999999
+      }
+    ],
+    [
+      //动态标题插件 先安装在配置， npm install vuepress-plugin-dynamic-title --save
+      "dynamic-title",
+      {
+        showIcon: "/favicon.ico",
+        showText: "(/≧▽≦/)咦！又好了！",
+        hideIcon: "/failure.ico",
+        hideText: "(●—●)喔哟，崩溃啦！",
+        recoverTime: 2000
+      }
+    ],
+
+    // vssue版本
+    // [
+    //   '@vuepress-reco/comments', {
+    //     solution: 'vssue',
+    //     options: {
+    //       title: 'vuepress-theme-reco',
+    //       platform: 'github',
+    //       owner: 'cuehuabuleng',
+    //       repo: 'personal-website',
+    //       clientId: '42fbd5134e8d1fce513c',
+    //       clientSecret: 'e0076c4dd54699b66be707b6acd987da6da712fe',
+    //     }
+    //   }
+    // ],
+
+    // valine版本
+    [
+      '@vuepress-reco/comments',
+      {
+        solution: 'valine',
+        // https://leancloud.cn/dashboard/applist.html#/apps
+        options: {
+          appId: 'mJLKmhMXUh5LaXSoyIurNTAb-gzGzoHsz',// your appId
+          appKey: 'HDWokRPBWqEDcWxrITLcQ4f7', // your appKey
+          visitor: true // 阅读量统计
+        }
       }
     ]
   ]
