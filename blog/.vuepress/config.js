@@ -246,7 +246,7 @@ module.exports = {
       //动态标题插件 先安装在配置， npm install vuepress-plugin-dynamic-title --save
       "dynamic-title",
       {
-        showIcon: "/favicon.ico",
+        showIcon: "/01.ico",
         showText: "(/≧▽≦/)咦！又好了！",
         hideIcon: "/failure.ico",
         hideText: "(●—●)喔哟，崩溃啦！",
