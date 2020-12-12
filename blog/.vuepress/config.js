@@ -3,7 +3,8 @@ module.exports = {
   description: '愿时光能缓，愿故人不散！',
   dest: 'public',
   head: [
-    ['link', { rel: 'icon', href: '/01.ico' }]
+    ['link', { rel: 'icon', href: '/01.ico' }],
+    ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
   theme: 'reco',
@@ -281,6 +282,15 @@ module.exports = {
           visitor: true // 阅读量统计
         }
       }
-    ]
+    ],
+
+    //pwa插件 
+    ['@vuepress/pwa', {
+      serviceWorker: true,
+      updatePopup: {
+        message: "发现新内容可用",
+        buttonText: "刷新"
+      }
+    }],
   ]
 }  
