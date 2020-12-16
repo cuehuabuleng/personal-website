@@ -3,7 +3,7 @@ module.exports = {
   description: '愿时光能缓，愿故人不散！',
   dest: 'public',
   head: [
-    ['link', { rel: 'icon', href: '/01.ico' }],
+    ['link', { rel: 'icon', href: '/icons/title.ico' }],
     ['link', { rel: 'manifest', href: '/manifest.json' }],
     ['meta', { name: 'viewport', content: 'width=device-width,initial-scale=1,user-scalable=no' }]
   ],
@@ -247,7 +247,7 @@ module.exports = {
       //动态标题插件 先安装在配置， npm install vuepress-plugin-dynamic-title --save
       "dynamic-title",
       {
-        showIcon: "/01.ico",
+        showIcon: "/icons/title.ico",
         showText: "(/≧▽≦/)咦！又好了！",
         hideIcon: "/failure.ico",
         hideText: "(●—●)喔哟，崩溃啦！",

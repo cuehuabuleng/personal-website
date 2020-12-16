@@ -11,7 +11,7 @@ tagline: 远赴人间惊鸿宴， 一睹人间盛世颜.
 #   boxShadow: '0 5px 18px rgba(0,0,0,0.2)',
 #   opacity: '0.5'
 # }
-bgImage: images/bg1.jpg
+bgImage: images/snack.jpeg
 bgImageStyle: {
   height: '450px'
 }
