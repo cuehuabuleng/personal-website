@@ -36,6 +36,11 @@ module.exports = {
             icon: 'reco-api'
           },
           {
+            text: 'tex-ui组件库',
+            link: 'http://114.55.93.74:8015/',
+            icon: 'reco-api'
+          },
+          {
             text: 'react通用后台管理系统',
             link: 'http://114.55.93.74:8005/#/home'
           },
