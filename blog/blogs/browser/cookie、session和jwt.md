@@ -1,5 +1,5 @@
 ---
-title: ookie、session和JWT（JSON Web Token）的区别
+title: cookie、session和JWT（JSON Web Token）的区别
 date: 2021-3-1
 tags:
  - cookies 
