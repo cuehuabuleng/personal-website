@@ -1,6 +1,6 @@
 ---
 title: this的绑定方式
-date: 2020-12-7
+date: 2020-12-07
 tags:
  - js
 categories: 

@@ -1,6 +1,6 @@
 ---
 title: MVVM模式的理解
-date: 2020-10-8
+date: 2020-10-08
 tags:
  - mvvm
 categories: 

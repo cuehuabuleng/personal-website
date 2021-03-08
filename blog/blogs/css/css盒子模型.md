@@ -1,12 +1,12 @@
 ---
 title: css盒模型
-date: 2020-12-8
+date: 2020-12-08
 tags:
  - html 
  - dom
 categories: 
  - html
- - dom
+ - dom  
 ---
 # css盒子模型
 
